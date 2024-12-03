@@ -1,0 +1,9 @@
+@import '../../styles/abstracts/';
+
+.navbar {
+    padding: spacing(2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5rem);
+}

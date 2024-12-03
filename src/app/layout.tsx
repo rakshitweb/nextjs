@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import '@/styles/index.scss';
+import { MouseScrollBackground, Navbar } from '@/components';
 
 export const metadata: Metadata = {
-    title: 'E-Commerce | Practice',
+    title: 'Blogify | Practice',
     description: 'Ecommerce application for practice',
 };
 
@@ -13,7 +14,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <MouseScrollBackground />
+                <div className="body-container">
+                    <Navbar />
+                    {children}
+                </div>
+            </body>
         </html>
     );
 }
