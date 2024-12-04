@@ -7,3 +7,9 @@ $breakpoints: (
 );
 
 $base-spacing: 8px;
+
+$z-index: (
+    mouse-backdrop: 0,
+    body-container: 1,
+    navbar: 100,
+);

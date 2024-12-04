@@ -1,2 +1,2 @@
 export * from './navbar';
-export * from './MouseScrollBackground';
+export * from './mouseScrollBackground';

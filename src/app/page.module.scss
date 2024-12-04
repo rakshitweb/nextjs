@@ -1,0 +1,25 @@
+@import '../styles/abstracts/';
+
+.home {
+    &--heading {
+        color: $primary;
+        margin-bottom: spacing(1.5);
+    }
+    &--content {
+        margin-bottom: spacing(2);
+        text-align: justify;
+    }
+    &__divider {
+        margin: spacing(2) 0;
+        width: 50%;
+        border-bottom: 1px solid $primary;
+        @include breakpoint-up(sm) {
+            margin: spacing(3) 0;
+            width: 100%;
+        }
+    }
+    &__image {
+        width: min(100%, 20rem);
+        border-radius: 1rem;
+    }
+}

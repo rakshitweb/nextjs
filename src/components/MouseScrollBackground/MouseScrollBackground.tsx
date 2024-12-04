@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import classes from './MouseScrollBackground.module.scss';
+import classes from './mouseScrollBackground.module.scss';
 
 export const MouseScrollBackground = () => {
     const mouseRef = useRef<HTMLDivElement | null>(null);

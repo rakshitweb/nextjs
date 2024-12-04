@@ -1,1 +1,1 @@
-export { MouseScrollBackground } from './MouseScrollBackground';
+export { MouseScrollBackground } from './mouseScrollBackground';
