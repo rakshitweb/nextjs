@@ -1,18 +1,16 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-html,
 body {
-    height: 100%;
-    font-family: 'Geist Mono VF';
-    background-color: map-get($background, black);
-    color: map-get($text, light);
+  font-family: 'Geist Mono VF';
+  background-color: map-get($background, black);
+  color: map-get($text, light);
 }
 
 h1,
@@ -21,28 +19,34 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Geist VF';
-    font-size: 1.6rem;
+  font-family: 'Geist VF';
+  font-size: 1.6rem;
 }
 
 p,
 span {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.body-container {
-    position: fixed;
-    inset: 0;
-    z-index: map-get($z-index, body-container);
-    overflow: auto;
+.body {
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &--content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .primary-color {
-    color: $primary;
+  color: $primary;
 }

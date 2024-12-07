@@ -1,0 +1,10 @@
+@import '../../styles/abstracts/';
+
+.footer {
+  padding: spacing(3);
+  backdrop-filter: blur(5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
