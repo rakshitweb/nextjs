@@ -1,10 +1,12 @@
+@use 'sass:map';
+
 @mixin breakpoint-up($breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
-    @if $breakpoint-value {
-        @media (min-width: $breakpoint-value) {
-            @content;
-        }
-    } @else {
-        @error "Invalid breakpoint value. Not found in registered breakpoints";
+  $breakpoint-value: map.get($breakpoints, $breakpoint);
+  @if $breakpoint-value {
+    @media (min-width: $breakpoint-value) {
+      @content;
     }
+  } @else {
+    @error "Invalid breakpoint value. Not found in registered breakpoints";
+  }
 }

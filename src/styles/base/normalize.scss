@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,8 +11,8 @@ html {
 
 body {
   font-family: 'Geist Mono VF';
-  background-color: map-get($background, black);
-  color: map-get($text, light);
+  background-color: map.get($background, black);
+  color: map.get($text, light);
 }
 
 h1,
@@ -49,4 +51,8 @@ a {
 
 .primary-color {
   color: $primary;
+}
+
+.text-center {
+  text-align: center;
 }
